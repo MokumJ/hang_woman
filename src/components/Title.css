@@ -4,3 +4,7 @@
     align-self-position: relative;
       align-self-position-left: 30px;
       align-self-position-border: 3px solid #73AD21; }
+
+main {
+  margin-left: 500px;
+  margin-top: 200px; }
