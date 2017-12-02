@@ -29,8 +29,8 @@ function showGuess(word, guesses) {
 
   function next(word, guesses) {
     if (wrongGuessCount(word, guesses) === 6)
-      return result = word
-    if (isWinner(word, guesses)) return result = "You Won!!!!";
+      return result = (word + "LOOSER!");
+    if (isWinner(word, guesses)) return result = "WINNER!";
       result = showGuess(word, guesses) ;
   }
 
