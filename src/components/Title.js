@@ -6,7 +6,7 @@ class Title extends PureComponent {
   render(){
     return (
     <div>
-    <img classname="header" alt="header" src={ Header } />
+    <img className="header" alt="header" src={ Header } />
     </div>
   )
   }

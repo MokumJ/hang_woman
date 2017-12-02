@@ -1,8 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import ADD_LETTER from '../actions'
+import addLetter from '../actions/index'
+import PropTypes from 'prop-types'
 
-let guess = ({ dispatch}) => {
+let Guess = ({dispatch}) => {
   let input
 
   return (
@@ -12,7 +13,7 @@ let guess = ({ dispatch}) => {
       if (!input.value.trim()){
         return
       }
-      dispatch(guess(input.value))
+      dispatch(addLetter(input.value))
       input.value = ''   }}>
       <input ref={node => { input = node  }}/>
         <button className="guess" type="submit">

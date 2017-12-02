@@ -1,5 +1,5 @@
-import Letter from './Letter'
+import letter from './letter'
 
 export default {
-   Letter
+   letter
 }

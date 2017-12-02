@@ -1,8 +1,10 @@
 import React, { PureComponent} from 'react'
 import Title from './Title'
-import './game.css'
+import './Game.css'
 import Guess from './Guess'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+
 
 class Game extends PureComponent {
   render()  {
@@ -14,12 +16,14 @@ class Game extends PureComponent {
       </header>
 
       <main>
-      { this.props.Letter }
+      <h1 className="word">{ this.props.letter[0] }</h1>
+      <Guess />
+
       </main>
       </div>
-  )
+    )
+   }
+ }
 
-}
-
-const mapStateToProps = ({ Letter }) => ({ Letter })
-export default connect (mapStateProps)(Game)
+const mapStateToProps = ({ letter }) => ({ letter })
+export default connect (mapStateToProps)(Game)
