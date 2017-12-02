@@ -1,6 +1,8 @@
 import React, { PureComponent} from 'react'
 import Title from './Title'
 import './game.css'
+import Guess from './Guess'
+import { connect } from 'react-redux'
 
 class Game extends PureComponent {
   render()  {
@@ -12,10 +14,12 @@ class Game extends PureComponent {
       </header>
 
       <main>
+      { this.props.Letter }
       </main>
       </div>
   )
 
 }
 
-export default Game
+const mapStateToProps = ({ Letter }) => ({ Letter })
+export default connect (mapStateProps)(Game)
