@@ -1,12 +1,18 @@
 input {
-  margin-top: 30px;
-  height: 40px;
-  width: 30px;
-  font-size: 26px; }
+  height: 80px;
+  width: 80px;
+  font-size: 50px; }
+
+.guessing {
+  display: block;
+  align: center;
+  margin-left: 300px; }
 
 .guess {
   height: 50px;
-  width: 80px;
+  width: 200px;
   margin-left: 20px;
-  font-size: 20px;
+  font-size: 50px;
+  font-style: oblique;
+  text-align: center;
   border-radius: 20px; }

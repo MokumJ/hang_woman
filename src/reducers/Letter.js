@@ -1,7 +1,7 @@
 import { ADD_LETTER } from '../actions/index'
 
-  const words = ['alien', 'deterritorialization', 'nomadism', 'randomizing', 'rhizomatic'];
-  var result = ""
+const words = ['alien', 'deterritorialization', 'nomadism', 'randomizing', 'rhizomatic'];
+var result = ""
 const guesses = []
 var word = words[Math.floor(Math.random() * words.length)]
 
@@ -29,7 +29,7 @@ function showGuess(word, guesses) {
 
   function next(word, guesses) {
     if (wrongGuessCount(word, guesses) === 6)
-      return result = (word + "LOOSER!");
+      return result = ("The word was " + word + ", LOOSER!");
     if (isWinner(word, guesses)) return result = "WINNER!";
       result = showGuess(word, guesses) ;
   }

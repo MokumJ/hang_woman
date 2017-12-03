@@ -2,12 +2,13 @@ import React from 'react'
 import { connect } from 'react-redux'
 import addLetter from '../actions/index'
 import PropTypes from 'prop-types'
+import './Guess.css'
 
 let Guess = ({dispatch}) => {
   let input
 
   return (
-    <div>
+    <div className="guessing">
       <form onSubmit={e => {
       e.preventDefault()
       if (!input.value.trim()){
