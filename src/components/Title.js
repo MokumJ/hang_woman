@@ -5,9 +5,9 @@ import './Title.css'
 class Title extends PureComponent {
   render(){
     return (
-    <div>
-    <img className="header" alt="header" src={ Header } />
-    </div>
+    <header>
+    Hang Women
+    </header>
   )
   }
 }

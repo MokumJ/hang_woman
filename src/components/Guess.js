@@ -4,6 +4,9 @@ import addLetter from '../actions/index'
 import PropTypes from 'prop-types'
 import './Guess.css'
 
+function refreshPage(){
+    window.location.reload();
+  }
 let Guess = ({dispatch}) => {
   let input
 
@@ -20,6 +23,8 @@ let Guess = ({dispatch}) => {
         <button className="guess" type="submit">
           Guess
         </button>
+        <button className="newgame" type="button" onClick={ refreshPage }>
+        <span>New game</span> </button>
       </form>
     </div>
   )

@@ -1,6 +1,7 @@
 header {
   float: center;
-  margin-left: 70px; }
+  margin-left: 0px;
+  margin-bottom: 100px; }
 
 main {
   margin-left: 250px;
@@ -23,7 +24,7 @@ li {
   float: center;
   text-align: center;
   margin-right: 280px;
-  color: #fee3f6; }
+  font-family: helvetica; }
 
 .HangWoman1 {
   height: 200px;
@@ -48,3 +49,6 @@ li {
 .HangWoman6 {
   height: 200px;
   width: 300px; }
+
+.align {
+  display: inline; }

@@ -1,7 +1,8 @@
 input {
   height: 80px;
   width: 80px;
-  font-size: 50px; }
+  font-size: 40px;
+  font-family: helvetica; }
 
 .guessing {
   display: block;
@@ -9,10 +10,25 @@ input {
   margin-left: 300px; }
 
 .guess {
-  height: 50px;
+  height: 80px;
   width: 200px;
   margin-left: 20px;
-  font-size: 50px;
+  font-size: 40px;
   font-style: oblique;
   text-align: center;
-  border-radius: 20px; }
+  border-radius: 2px;
+  background-color: #fee3f6;
+  color: white;
+  font-family: helvetica; }
+
+.newgame {
+  height: 80px;
+  width: 200px;
+  margin-left: 40px;
+  font-size: 30px;
+  font-style: oblique;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #fee3f6;
+  color: white;
+  font-family: helvetica; }

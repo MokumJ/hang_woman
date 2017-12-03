@@ -14,6 +14,7 @@ function showGuess(word, guesses) {
   const letters = word.split("");
   const dashes = letters.map(letter => "_ ")
 
+
   for (var i=0; i < letters.length; i++ ) {
    guesses.map(function(guess) {
      if (guess === letters[i]) {dashes[i] = letters[i]};
@@ -33,13 +34,17 @@ function showGuess(word, guesses) {
     if (isWinner(word, guesses)) return result = "WINNER!";
       result = showGuess(word, guesses) ;
   }
+  function showWrongGuess(guesses, word) {
+    const wrongGuesses = guesses.filter(letter => word.indexOf(letter) === -1)
+    return wrongGuesses
 
+  }
 export default (state = result, { type, payload } = {}) => {
 switch(type) {
     case ADD_LETTER :
     guesses.push(payload)
     next(word, guesses)
-    return [result, wrongGuessCount(word, guesses)]
+    return [result, wrongGuessCount(word, guesses), showWrongGuess(guesses, word)]
 
   default :
     return state
