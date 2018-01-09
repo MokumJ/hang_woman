@@ -1,4 +1,4 @@
-import letter from './letter'
+import letter from './Letter'
 
 export default {
    letter
